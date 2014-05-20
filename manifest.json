@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Rabota.UA NLB",
+	"version": "1.0",
+	"description": "This is sample extension showing how you can debug which server is responding to your request",
+	"browser_action": {
+		"default_icon": "disabled.png"
+	},
+	"permissions": [
+		"tabs",
+		"webRequest", 
+		"*://rabota.ua/*",
+		"*://*.rabota.ua/*",
+		"*://rabota.com.ua/*",
+		"*://*.rabota.com.ua/*"
+	],
+	"background": {
+		"scripts": ["background.js"]
+	}
+}
